@@ -1,0 +1,225 @@
+@media only screen and (max-width: 1025px) {
+    .side-bar {
+        padding: 5px 10px;
+
+        a {
+            padding: 7px 0;
+            font-size: 25px;
+        }
+    }
+
+    .main-nav {
+       .main-menu .nav-link {
+            margin-left: 10px;
+            padding: 8px 6px;
+            font-size: 14px;
+        }
+    }
+
+    .quick-info .info p {
+        font-size: 14px;
+    }
+
+    .main {
+         h1 {
+            font-size: 37px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .down-button {
+        display: none;
+    }
+
+    .quick-info {
+        display: none;
+    }
+
+    .header {
+        justify-content: flex-end;
+    }
+    
+//responsive menu
+
+    .main-nav {
+
+        .main-menu {
+            // left: 100%;
+            margin-top: 20px;
+            height: calc(~'100vh - 65px');
+            flex-flow: column;
+            position: absolute;
+            width: 100%;
+            display: none;
+            background-color: #000;
+            transition: .5s;
+
+            .nav-link {
+                margin-left: 0;
+                padding: 20px 0;
+                font-size: 20px;
+            }
+        }
+
+        .menu-icon {
+            position: static;
+            display: flex;
+            align-self: flex-end;
+        }
+    }
+
+    @keyframes animateLink {
+        from {
+            opacity: 0;
+            transform: translate(50px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translate(0px);
+        }
+    }
+
+    .active {
+        left: 0 !important;
+        display: block !important;
+    }
+
+//---------------------------------------------------------------------
+ 
+    .main {
+        h1 {
+            font-size: 35px;
+        }
+
+        p {
+            font-size: 17px;
+        }
+    }
+
+    .rectangle {
+        display: none;
+    }
+
+    .about-content {
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+
+    .about-description {
+        padding: 34px 0 0;
+
+        p {
+            text-align: left;
+        }
+    }
+
+    .works-container {
+        flex-wrap: wrap;
+
+        .work-block {
+            width: 100%;
+            margin-top: 35px;
+        }
+    }
+
+    .upper-foot .foot-content-container {
+        flex-wrap: wrap;
+
+        h4 {
+            margin-top: 25px;
+            font-size: 16px;
+        }
+
+        .foot-contact a {
+            font-size: 18px;
+        }
+    }
+}
+
+@media only screen and (max-width: 478px) {
+    .side-bar {
+        display: none;
+    }
+    
+    .main {
+        padding-top: 0;
+
+        h1 {
+            font-size: 25px; 
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        .down-button {
+            display: none;
+        }
+    }
+
+    .about-me {
+        padding: 50px 0;
+
+        .button {
+            margin-top: 40px;
+        }
+    }
+
+    .about-content {
+        margin-top: 40px;
+    }
+
+    .about-description {
+        padding: 34px 0 0;
+
+        p {
+            text-align: center;
+        }
+    }
+
+    .my-skills {
+        padding: 50px 0;
+    }
+
+    .skills-container {
+        margin-top: 0;
+    
+        .skill-block {
+            width: 100%;
+            font-size: 25px;
+            padding: 30 25px;
+
+            .skill-content .skill .skill-name {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    .my-works {
+        padding: 50px 0;
+    }
+
+    .works-container {
+        margin-top: 20px;
+    }
+    
+    .upper-foot .foot-content-container .footer-nav {
+        flex-wrap: wrap;
+
+        a {
+            width: 100%;
+            padding: 2px 0;
+            border: none;
+        }
+    }
+}

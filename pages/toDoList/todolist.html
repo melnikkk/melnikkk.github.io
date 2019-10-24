@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/styles/normalize.css">
+    <link rel="stylesheet" href="assets/styles/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <script src="script.js" defer></script>
+    <title>ToDoList</title>
+</head>
+
+<body>
+    <section class="screen">
+        
+    <!-- Modal windows -->
+    <div class="modal-bg" id="error-no-value">
+        <div class="modal">
+            <h2 class="title">ERROR!</h2>
+            <p class="text">Please, add any task.</p>
+            <button class="btn" id="ok-btn">OK</button>
+        </div>
+    </div>
+
+    <div class="modal-bg" id="error-window">
+        <div class="modal">
+            <h2 class="title">ERROR!</h2>
+            <p class="text">Complete more tasks.</p>
+            <button class="btn" id="contine-btn">Сontinue execution</button>
+        </div>
+    </div>
+
+    <div class="modal-bg" id="confirm-window">
+        <div class="modal">
+            <h2 class="title">Confirm the action on the page.</h2>
+            <p class="text">You definitely want to delete this?</p>
+            <div class="btns-block">
+                <button class="btn" id="confirm-btn">Confirm</button>
+                <button class="btn" id="cancel-btn">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-bg" id="clear-window">
+        <div class="modal">
+            <h2 class="title">Confirm the action on the page.</h2>
+            <p class="text">You definitely want to delete this?</p>
+            <div class="btns-block">
+                <button class="btn" id="confirm-clear-btn">Confirm</button>
+                <button class="btn" id="cancel-clear-btn">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <!-- Inputs section -->
+    <div class="first-section">
+        <h1 class="title">Awesome ToDoList</h1>
+        <div class="section-block">
+            <p class="text">What we gonna do?</p>
+            <div class="form-container">
+                <form action="#" name="toDoForm">
+                    <input class="input-field" type="text" id="todo-title" placeholder="Write it here!">
+                    <input class="input-field" type="text" id="todo-deadline" placeholder="Deadline" onfocus="(this.type='date')" onblur="if (this.value === '') this.type = 'text';">
+                    <input class="btn" type="submit" id="submit-button" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Lists section -->
+    <div class="second-section">
+        <div class="todo-block">
+            <div class="todo-block-title">
+                <h2 class="title">To Do List:</h2>
+            </div>
+            <ul class="list" id="to-do-list"></ul>
+            <div class="todo-block-footer">
+                <p class="text">Amount: <span class="counter">0</span></p>
+                <button class="btn clear" value="clear">Clear</button>
+            </div>
+        </div>
+
+        <div class="todo-block">
+            <div class="todo-block-title">
+                <h2 class="title">In Progress:</h2>
+            </div>
+            <ul class="list" id="in-progress-list"></ul>
+            <div class="todo-block-footer">
+                <p class="text">Amount: <span class="counter">0</span></p>
+                <button class="btn clear" value="clear">Clear</button>
+            </div>
+        </div>
+
+        <div class="todo-block">
+            <div class="todo-block-title">
+                <h2 class="title">Done:</h2>
+            </div>
+            <ul class="list" id="done-list"></ul>
+            <div class="todo-block-footer">
+                <p class="text">Amount: <span class="counter">0</span></p>
+                <button class="btn clear" value="clear">Clear</button>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+
+</html>

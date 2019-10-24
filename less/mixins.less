@@ -1,0 +1,33 @@
+//mixins
+.title(@title-size, @color: @title-color) {
+    text-align: center;
+    color: @color;
+    font-family: @title-font;
+    font-size: @title-size;
+}
+
+.text(@text-size, @color: @text-color){
+    text-align: center;
+    color: @color;
+    font-family: @text-font;
+    font-size: @text-size;
+}
+
+.image() {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.flexbox(@content: space-between) {
+    display: flex;
+    justify-content: @content;
+}
+
+.link(@color: @text-color) {
+    display: block;
+    color: @color;
+    text-decoration: none;
+}
+//---------------------------------------------------------------------

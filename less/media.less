@@ -49,15 +49,15 @@
     .main-nav {
 
         .main-menu {
-            // left: 100%;
-            margin-top: 20px;
-            height: calc(~'100vh - 65px');
+            top: 0;
+            height: 100vh;
             flex-flow: column;
             position: absolute;
             width: 100%;
             display: none;
-            background-color: #000;
+            background-color: #292929;
             transition: .5s;
+            justify-content: center;
 
             .nav-link {
                 margin-left: 0;
@@ -70,6 +70,10 @@
             position: static;
             display: flex;
             align-self: flex-end;
+
+            &> i {
+                z-index: 1;
+            }
         }
     }
 
@@ -87,7 +91,7 @@
 
     .active {
         left: 0 !important;
-        display: block !important;
+        display: flex !important;
     }
 
 //---------------------------------------------------------------------

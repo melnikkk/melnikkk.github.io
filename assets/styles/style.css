@@ -5285,14 +5285,15 @@ template {
     justify-content: flex-end;
   }
   .main-nav .main-menu {
-    margin-top: 20px;
-    height: calc(100vh - 65px);
+    top: 0;
+    height: 100vh;
     flex-flow: column;
     position: absolute;
     width: 100%;
     display: none;
-    background-color: #000;
+    background-color: #292929;
     transition: .5s;
+    justify-content: center;
   }
   .main-nav .main-menu .nav-link {
     margin-left: 0;
@@ -5303,6 +5304,9 @@ template {
     position: static;
     display: flex;
     align-self: flex-end;
+  }
+  .main-nav .menu-icon > i {
+    z-index: 1;
   }
   @keyframes animateLink {
     from {
@@ -5316,7 +5320,7 @@ template {
   }
   .active {
     left: 0 !important;
-    display: block !important;
+    display: flex !important;
   }
   .main h1 {
     font-size: 35px;

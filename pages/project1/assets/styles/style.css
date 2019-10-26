@@ -5113,16 +5113,21 @@ readers do not read off random characters that represent icons */
   .menu {
     display: flex;
     cursor: pointer;
+    transition: .3s;
+  }
+  .menu:hover {
+    color: #e84545;
   }
   .main-nav {
     display: none;
     height: calc(100vh - 50px);
     flex-flow: column;
+    justify-content: center;
     position: absolute;
     left: 0;
     width: 100%;
     margin-top: 30px;
-    background-color: #fff;
+    background-color: #242a47;
   }
   .active {
     display: flex;

@@ -5082,6 +5082,9 @@ template {
 .skills-container .skill-block .skill-content .skill:hover.git-skill {
   color: #F05133;
 }
+.skills-container .skill-block .skill-content .skill:hover.npm-skill {
+  color: #CB3837;
+}
 .skills-container .skill-block .skill-content .skill:hover.vs-skill {
   color: #35A9F2;
 }

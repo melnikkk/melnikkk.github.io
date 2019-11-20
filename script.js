@@ -1,11 +1,11 @@
 //show/hide side elements
 
-let scrollTopBtn = document.querySelector('.scroll-top');
+const scrollTopBtn = document.querySelector('.scroll-top');
 
 function showSideElements() {
     let y = window.scrollY;
-    let displayHeight = window.innerHeight;
-    let sideBar = document.getElementById('side-menu');
+    const displayHeight = window.innerHeight;
+    const sideBar = document.getElementById('side-menu');
 
     if (y > displayHeight) {
         sideBar.className = 'side-bar show';
@@ -18,21 +18,21 @@ window.addEventListener('scroll', showSideElements);
 
 //---------------------------------------------------------------------
 //first screen menu
-let menu = document.querySelector('.main-menu');
+const menu = document.querySelector('.main-menu');
 //first screen
-let firstScreen = document.querySelector('.first-screen');
+const firstScreen = document.querySelector('.first-screen');
 //scroll down button
-let scrollDownBtn = document.querySelector('.down-button');
+const scrollDownBtn = document.querySelector('.down-button');
 //portfolio button
-let portfolioBtn = document.getElementById('portfolioBtn');
+const portfolioBtn = document.getElementById('portfolioBtn');
 //section about me
-let aboutMe = document.querySelector('.about-me');
+const aboutMe = document.querySelector('.about-me');
 //skills section
-let skills = document.querySelector('.my-skills');
+const skills = document.querySelector('.my-skills');
 //portfolio section
-let myWorks = document.querySelector('.my-works');
+const myWorks = document.querySelector('.my-works');
 //footer menu
-let footerMenu = document.querySelector('.footer-nav');
+const footerMenu = document.querySelector('.footer-nav');
 
 menu.addEventListener('click', (event) => {
     const {target} = event;
@@ -108,9 +108,9 @@ function scrollFunction(scrollFrom, scrollTo) {
 //show/hide mobile menu
 
 function burgerMenu() {
-    let burgerBtn = document.querySelector('.menu-icon');
-    let burgerNav = document.querySelector('.main-menu'); 
-    let links = document.querySelectorAll('.nav-link');
+    const burgerBtn = document.querySelector('.menu-icon');
+    const burgerNav = document.querySelector('.main-menu'); 
+    const links = document.querySelectorAll('.nav-link');
 
     burgerBtn.addEventListener('click', () => {
         burgerNav.classList.toggle('active');
@@ -126,7 +126,7 @@ function burgerMenu() {
 //my works
 
 function showPage() {
-    let projects = document.querySelectorAll('.work-block');
+    const projects = document.querySelectorAll('.work-block');
 
     function addLink(projectIndex, link) {
         projects[projectIndex].addEventListener('click', () => {

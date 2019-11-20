@@ -1,0 +1,33 @@
+{
+  "name": "portfolio",
+  "version": "0.9.9",
+  "description": "my porfolio web-site",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/melnikkk/melnikkk.github.io.git"
+  },
+  "keywords": [
+    "web",
+    "portfolio",
+    "web",
+    "development",
+    "css",
+    "html",
+    "javascript",
+    "junior",
+    "frontend"
+  ],
+  "author": "Melnik Alexander",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/melnikkk/melnikkk.github.io/issues"
+  },
+  "homepage": "https://github.com/melnikkk/melnikkk.github.io#readme",
+  "dependencies": {
+    "gsap": "^3.0.1"
+  }
+}

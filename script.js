@@ -130,13 +130,14 @@ function showPage() {
 
     function addLink(projectIndex, link) {
         projects[projectIndex].addEventListener('click', () => {
-            window.open(link, "_blank");
+            if (!event.target.classList.contains('fab')) window.open(link, "_blank");
         });
     }
 
     addLink(0, 'pages/project1/activebox.html');
     addLink(1, 'pages/project2/mogo.html');
     addLink(2, 'pages/toDoList/todolist.html');
+    addLink(3, 'pages/weatherApp/weather_app.html');
 }
 
 //---------------------------------------------------------------------

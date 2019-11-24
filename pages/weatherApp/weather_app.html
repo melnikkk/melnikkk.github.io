@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="favicon.ico" rel="icon" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/styles/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <title>Weathere Everywhere</title>
+</head>
+
+<body>
+    <section class="screen-section">
+        <div class="modal-bg" id="error-window">
+            <div class="modal"></div>
+            </div>
+        </div> 
+
+        <div class="form-container">
+            <form action="#" class="form" name="takeLocation">
+                <input type="text" id="city-input" class="location" placeholder="Enter your city here...">
+                <input type="text" id="country-input" class="location" placeholder="Enter your country here...">
+
+                <input type="submit" value="Submit" id="submit">
+            </form>
+            <div id="location" title="Use my location"><i class="fas fa-search-location"></i></div>
+        </div>
+
+        <div class="weather-container">
+            <div class="title-block">
+                <h1 class="title">The Weather App!</h1>
+                <button class="btn" id="myHistory">My history</button>
+            </div>
+            <div class="loader-elem hide" id="loader">
+                <i class="fas fa-sun"></i>
+            </div>
+            <div class="history hide">
+                <h2 class="title">History</h2>
+                <table class="history-table">
+                    <thead class="history-head">
+                        <tr>
+                            <th>&#8470;</th>
+                            <th>Location</th>
+                            <th>Local<br>time</th>
+                            <th>Temperature,<br>&deg;C</th>
+                            <th>Feels like,<br>&deg;C</th>
+                            <th>Weather</th>
+                            <th>Wind</th>
+                            <th>Pressure,<br>MB</th>
+                        </tr>
+                    </thead>
+
+                    <tbody class="history-body"></tbody>
+                </table>
+                <div class="history-buttons">
+                    <button class="btn" id="hideHistory">Hide history</button>
+                    <button class="btn" id="clearHistory">Clear history</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; coded by <span>Melnik Alexander</span></p>
+        </div>
+    </section>
+    <script src="bundle.js"></script>
+</body>
+
+</html>

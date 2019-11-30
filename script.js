@@ -138,6 +138,40 @@ function showPage() {
     addLink(1, 'pages/project2/mogo.html');
     addLink(2, 'pages/toDoList/todolist.html');
     addLink(3, 'pages/weatherApp/weather_app.html');
+    addLink(4, 'pages/calculator/calculator.html');
+}
+//---------------------------------------------------------------------
+//show elements on scroll
+
+function showOnScroll() {
+    const scroll = window.requestAnimationFrame || function(callback) { window.setTimeout(callback, 1000 / 60)};
+    const elemShow = document.querySelectorAll('.show-on-scroll');
+
+    function isElementInViewport(el) {
+        var rect = el.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <= (window.innerHeight || document. documentElement.clientHeight) &&
+          rect.right <= (window.innerWidth || document. documentElement.clientWidth)
+        );
+      }
+
+    function loop() {
+        elemShow.forEach(elem => {
+            if (isElementInViewport(elem)) {
+                elem.classList.add('is-visible');
+            } else {
+                elem.classList.remove('is-visible');
+            }
+        })
+
+        scroll(loop);
+    }
+
+    loop();
+
+
 }
 
 //---------------------------------------------------------------------
@@ -151,6 +185,8 @@ function showPage() {
     scrollFunction(scrollTopBtn, firstScreen);
 
     showPage();
+
+    showOnScroll();
 })();
 
 //---------------------------------------------------------------------

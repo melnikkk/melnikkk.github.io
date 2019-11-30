@@ -5258,6 +5258,13 @@ template {
 .down-foot p:last-child {
   margin-top: 5px;
 }
+.show-on-scroll {
+  opacity: 0;
+  transition: 2s;
+}
+.is-visible {
+  opacity: 1;
+}
 @media only screen and (max-width: 1025px) {
   .side-bar {
     padding: 5px 10px;

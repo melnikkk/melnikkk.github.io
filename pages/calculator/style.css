@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(56deg, rgba(43, 46, 224, 0.15) 0%,rgba(26, 218, 182, 0.15) 100%),linear-gradient(336deg, rgb(50, 52, 221),rgb(60, 239, 241));
+}
+
+.calc {
+    width: 400px;
+    border: 1px solid #000;
+    border-radius: 8px;
+}
+
+.calc-display {
+    width: 100%;
+    font-size: 4rem;
+    height: 80px;
+    background-color: #a0b6a9;
+    text-align: right;
+    color: #5b635f;
+    padding: 0 15px;
+    border: 8px solid #61616f;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+h1 {
+    font-size: 60px;
+    color: #fff;
+    text-shadow: 5px 5px 0 #000;
+    font-family: 'Poppins', sans-serif;
+    line-height: 0;
+}
+
+button {
+    height: 60px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #c4c4c4;
+    font-size: 2rem;
+    color: #333;
+    background-image: linear-gradient(to bottom,transparent,transparent 50%,rgba(0,0,0,.04));
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,.05), inset 0 1px 0 0 rgba(255,255,255,.45), inset 0 -1px 0 0 rgba(255,255,255,.15), 0 1px 0 0 rgba(255,255,255,.15);
+    text-shadow: 0 1px rgba(255,255,255,.4);
+}
+
+sup {
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #eaeaea;
+}
+
+button:focus {
+    outline: none;
+}
+
+.operator {
+    color: #5c72a5;
+}
+
+.clear {
+    background-color: #d26165;
+    border-color: #b0353a;
+    color: #fff;
+}
+
+.clear:hover {
+    background-color: #f17377;
+}
+
+.equal {
+    height: 100%;
+    grid-area: 3/4/7/5; /* grid-row-start + grid-row-end + grid-column-start + grid-column-end */
+    background-color: #5c72a5;
+    border-color: #4c5e9e;
+    color: #fff;
+}
+
+.equal:hover {
+    background-color: #6d7fb7;
+}
+
+.zero {
+    width: 100%;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.calc-btns {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 15px;
+    padding: 20px;
+    background-color: #61616f;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.footer span {
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: #722424;
+}
+
+
+
+
+
+
+
+
+

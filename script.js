@@ -139,6 +139,7 @@ function showPage() {
     addLink(2, 'pages/toDoList/todolist.html');
     addLink(3, 'pages/weatherApp/weather_app.html');
     addLink(4, 'pages/calculator/calculator.html');
+    addLink(5, 'pages/game/game.html');
 }
 //---------------------------------------------------------------------
 //show elements on scroll
@@ -170,8 +171,6 @@ function showOnScroll() {
     }
 
     loop();
-
-
 }
 
 //---------------------------------------------------------------------

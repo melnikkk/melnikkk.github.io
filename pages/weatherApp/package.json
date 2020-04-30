@@ -37,7 +37,7 @@
     "eslint-plugin-react-hooks": "^1.7.0"
   },
   "dependencies": {
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "uniq": "^1.0.1"
   }
 }
